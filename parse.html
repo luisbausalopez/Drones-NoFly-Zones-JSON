@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+	
+	<script type="text/javascript" src="js/mc-no-fly-zones-array.js"></script>
+	<script>
+		function parseAirports() {
+			var nofly = [];
+			for (z in nfz) {
+				var a = nfz[z];
+				var o = {
+					latitude: a[0],
+					longitude: a[1],
+					airport: a[2],
+					city: a[3],
+					country: a[4],
+					category: a[5],
+					nofly: a[6],
+					highrestriction: a[7]
+				}
+				nofly[z] = o;
+			}
+			//addToDiv(nofly);
+			console.log(JSON.stringify(nofly));
+			return nofly;
+		}
+		//function addToDiv(data) {
+			//$('div').setContent(JSON.stringify(data)).appendTo('body');
+		//}
+		
+		//var objs = parseAirports(nfz);
+		
+	</script>
+</head>
+<body>
+	<button onclick="parseAirports()">Click me</button>
+	<div id='noflyobj'>
+	</div>
+</body>
+</html>
