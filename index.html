@@ -18,12 +18,43 @@
 			height: 100%;
 			width: 100%;
 		}
+		
+		.square {
+			float: left;
+			width: 20px;
+			height: 20px;
+			margin: 5px;
+			border: 1px solid rgba(0, 0, 0, .2);
+		}
+		.hirest {
+			background: #3498DB;
+		}
+		.nofly {
+			background: #E74C3C;
+		}
 	</style>
 </head>
 <body>
 
 	<div>
 		<div id="map"></div>
+	</div>
+	
+	<div>
+		<h3>Legend</h3><hr>
+		<h4>Airports</h4>
+		<p><img src="img/airport-24-pink.png" alt="Category A" height="24" width="24"> Airport Category A</p>
+		<p><img src="img/airport-18-orange.png" alt="Category B" height="18" width="18"> Airport Category B</p>
+		<h4>Restricted Zones</h4>
+		<p><div class="square nofly"></div> No-Fly Zone</p>
+		<p><div class="square hirest"></div> High Restriction Zone</p>
+	</div>
+	
+	<br>
+	<div>
+		<h3>Attributions</h3><hr>
+		<p>Basemap by <a href="https://cartodb.com/">CartoDB</a></p>
+		<p>Icons by <a href="http://www.iconsdb.com/black-icons/airport-icon.html">IconsDB.org</a></p>
 	</div>
 
     <!--    // LEAFLET.JS 0.7.3 -->

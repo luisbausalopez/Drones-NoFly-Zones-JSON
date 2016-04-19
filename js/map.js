@@ -4,14 +4,14 @@
 var blOptions = {
 	name: 'Light Grey',
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-	maxZoom: 25,
-	minZoom: 1
+	maxZoom: 22,
+	minZoom: 3
 }
 var baselayer = L.tileLayer("http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", blOptions);
 
 //Map options
 var mapOptions = {
-	"center": [25, 15],		// latitude, longitude
+	"center": [35, 15],		// latitude, longitude
 	"zoom": 4,
 	"minZoom": 1,
 	"maxZoom": 22,
@@ -50,14 +50,18 @@ var hiRest = [];
 //Styles
 var airportStyleA = {
 	icon: {
-		iconUrl: 'img/airplane-trans-blue.png',
-		iconSize: [20, 20],
-		iconAnchor: [10, 10]
+		//iconUrl: 'img/airplane-trans-blue.png',
+		iconUrl: 'img/airport-24-pink.png',
+		//iconUrl: 'img/airport-blue.png',
+		iconSize: [24, 24],
+		iconAnchor: [12, 12]
 	}
 };
 var airportStyleB = {
 	icon: {
-		iconUrl: 'img/airplane-trans-grey.png',
+		//iconUrl: 'img/airplane-trans-grey.png',
+		iconUrl: 'img/airport-18-orange.png',
+		//iconUrl: 'img/airport-orange.png',
 		iconSize: [18, 18],
 		iconAnchor: [9, 9]
 	}
